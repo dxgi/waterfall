@@ -1,6 +1,6 @@
 {
     "name": "await-waterfall",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple try-catch block that allows the use of throw whilst being asynchronous. This utilizes async/waterfall.",
     "keywords": [
         "async",

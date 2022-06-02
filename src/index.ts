@@ -9,7 +9,7 @@ const bind = async (fn: Function, cb: Function, args: any) => {
     cb(null, result);
 }
 
-export default function waterfall<T>(tasks: Array<Function>, callback: (err?: any, result?: T) => void) {
+export function waterfall<T>(tasks: Array<Function>, callback: (err?: any, result?: T) => void) {
     const wrapped = tasks.map(fn => {
         return (args: any, cb: Function) => {
             if (typeof args === 'function')

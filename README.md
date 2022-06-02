@@ -8,7 +8,7 @@ const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 waterfall<String>([
   async () => {
-    delay(1000);
+    await delay(1000);
 
     return "Hello World!";
   },

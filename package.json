@@ -1,5 +1,5 @@
 {
-    "name": "asynchronous-waterfall",
+    "name": "await-waterfall",
     "version": "1.0.0",
     "description": "A simple try-catch block that allows the use of throw whilst being asynchronous. This utilizes async/waterfall.",
     "keywords": [
@@ -22,8 +22,11 @@
         "url": "https://github.com/iiiMaximus"
     },
     "license": "MIT",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
     "scripts": {
         "build": "tsc",
         "prepare": "yarn run build"

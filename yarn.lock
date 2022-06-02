@@ -17,6 +17,15 @@ async@^3.2.3:
   resolved "https://registry.yarnpkg.com/async/-/async-3.2.3.tgz#ac53dafd3f4720ee9e8a160628f18ea91df196c9"
   integrity sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==
 
+await-waterfall@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/await-waterfall/-/await-waterfall-1.0.0.tgz#387fb11c6a986fc6761a85017942d11ecf5d0310"
+  integrity sha512-m57d9f7apI3aTLJ3Imo5CBhaJXkGcLcvrw1hmFreaCpAAy+9US8WOd/vs/ZYYTx6YfwCG+106qpkevZT9xugiQ==
+  dependencies:
+    "@types/async" "^3.2.13"
+    async "^3.2.3"
+    dts-gen "^0.6.0"
+
 camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"

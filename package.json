@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "build": "tsc",
+        "prepare": "tsc"
+    },
+    "dependencies": {
+        "@types/async": "^3.2.13",
+        "async": "^3.2.3"
+    },
+    "devDependencies": {
+        "typescript": "^4.7.2"
+    }
+}

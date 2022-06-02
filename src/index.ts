@@ -9,7 +9,7 @@ const bind = async (fn: Function, cb: Function, args: any) => {
     cb(null, result);
 }
 
-export function waterfall<T>(tasks: Array<Function>, callback: (err?: any, result?: T) => void) {
+export function waterfall(tasks: Array<Function>, callback: (err?: any, result?: any) => void) {
     const wrapped = tasks.map(fn => {
         return (args: any, cb: Function) => {
             if (typeof args === 'function')
@@ -19,5 +19,5 @@ export function waterfall<T>(tasks: Array<Function>, callback: (err?: any, resul
         }
     });
 
-    async.waterfall<T>(wrapped, callback);
+    async.waterfall(wrapped, callback);
 }

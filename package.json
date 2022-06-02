@@ -1,11 +1,37 @@
 {
+    "name": "waterfall",
+    "version": "1.0.0",
+    "description": "A simple try-catch block that allows the use of throw whilst being asynchronous. This utilizes async/waterfall.",
+    "keywords": [
+        "async",
+        "waterfall",
+        "async/waterfall",
+        "asynchronous",
+        "try-catch"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iiiMaximus/waterfall.git"
+    },
+    "bugs": {
+        "url": "https://github.com/iiiMaximus/waterfall/issues"
+    },
+    "author": {
+        "name": "iMaximus Developer",
+        "email": "termitezgaming@gmail.com",
+        "url": "https://github.com/iiiMaximus"
+    },
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc",
         "prepare": "tsc"
     },
     "dependencies": {
         "@types/async": "^3.2.13",
-        "async": "^3.2.3"
+        "async": "^3.2.3",
+        "dts-gen": "^0.6.0"
     },
     "devDependencies": {
         "typescript": "^4.7.2"

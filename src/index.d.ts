@@ -1,1 +1,3 @@
-export declare function waterfall(tasks: Array<Function>, callback: (err?: any, result?: any) => void): void;
+import async from 'async';
+
+export declare function waterfall<T = any, E = Error>(tasks: Array<Function>, callback: async.AsyncResultCallback<T, E> | undefined): void;
